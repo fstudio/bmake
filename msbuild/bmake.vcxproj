@@ -18,6 +18,8 @@
     <ClCompile Include="..\Abstract\regex\regerror.c" />
     <ClCompile Include="..\Abstract\regex\regexec.c" />
     <ClCompile Include="..\Abstract\regex\regfree.c" />
+    <ClCompile Include="..\Abstract\signal.c" />
+    <ClCompile Include="..\Abstract\tmp.cpp" />
     <ClCompile Include="..\Abstract\utsname.cpp" />
     <ClCompile Include="..\bmake\arch.c" />
     <ClCompile Include="..\bmake\buf.c" />

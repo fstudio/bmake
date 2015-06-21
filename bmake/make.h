@@ -98,6 +98,11 @@
 #include <unistd.h>
 #include <sys/cdefs.h>
 
+#ifdef _WIN32
+int setenv(const char *name, const char * value, int overwrite);
+int unsetenv(const char *name);
+#endif
+
 #if defined(__GNUC__)
 #define	MAKE_GNUC_PREREQ(x, y)						\
 	((__GNUC__ == (x) && __GNUC_MINOR__ >= (y)) ||			\

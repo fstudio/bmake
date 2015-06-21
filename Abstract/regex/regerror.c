@@ -183,9 +183,9 @@ regerror(
 	
 		if (errcode & REG_ITOA) {
 			if (r->code != 0) {
-				(void)strlcpy(convbuf, r->name, sizeof convbuf);
+				strlcpy(convbuf, r->name, sizeof convbuf);
 			} else
-				(void)snprintf(convbuf, sizeof convbuf,
+				snprintf(convbuf, sizeof convbuf,
 				    "REG_0x%x", target);
 			s = convbuf;
 		} else

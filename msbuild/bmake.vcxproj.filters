@@ -210,6 +210,12 @@
     <ClCompile Include="..\Abstract\environment.c">
       <Filter>Sources\Abstract</Filter>
     </ClCompile>
+    <ClCompile Include="..\Abstract\signal.c">
+      <Filter>Sources\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\tmp.cpp">
+      <Filter>Sources\Abstract</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\bmake\lst.lib\lstInt.h">

@@ -135,7 +135,7 @@ static const char *rlimit_ident[RLIM_NLIMITS] = {
 #endif
 
 #ifndef _RLIM_T_DECLARED
-typedef	__rlim_t	rlim_t;
+typedef	int64_t	rlim_t;
 #define	_RLIM_T_DECLARED
 #endif
 
