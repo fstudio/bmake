@@ -12,7 +12,7 @@
 /* #undef DEFSHELL_INDEX */
 
 /* Define to 1 if you have the <ar.h> header file. */
-#define HAVE_AR_H 1
+//#define HAVE_AR_H 1
 
 /* Define to 1 if you have the declaration of `sys_siglist', and to 0 if you
    don't. */
@@ -50,7 +50,7 @@
 #define HAVE_GETENV 1
 
 /* Define to 1 if you have the `getopt' function. */
-#define HAVE_GETOPT 1
+//#define HAVE_GETOPT 1
 
 /* Define to 1 if you have the `getwd' function. */
 #define HAVE_GETWD 1
@@ -59,7 +59,7 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `killpg' function. */
-#define HAVE_KILLPG 1
+//#define HAVE_KILLPG 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
@@ -71,19 +71,19 @@
 /* #undef HAVE_NDIR_H */
 
 /* Define to 1 if you have the <paths.h> header file. */
-#define HAVE_PATHS_H 1
+//#define HAVE_PATHS_H 1
 
 /* Define to 1 if you have the <poll.h> header file. */
-#define HAVE_POLL_H 1
+//#define HAVE_POLL_H 1
 
 /* Define to 1 if you have the `putenv' function. */
 #define HAVE_PUTENV 1
 
 /* Define to 1 if you have the <ranlib.h> header file. */
-#define HAVE_RANLIB_H 1
+//#define HAVE_RANLIB_H 1
 
 /* Define to 1 if you have the `realpath' function. */
-#define HAVE_REALPATH 1
+//#define HAVE_REALPATH 1
 
 /* Define to 1 if you have the `select' function. */
 #define HAVE_SELECT 1
@@ -92,7 +92,7 @@
 #define HAVE_SETENV 1
 
 /* Define to 1 if you have the `setpgid' function. */
-#define HAVE_SETPGID 1
+//#define HAVE_SETPGID 1
 
 /* Define to 1 if you have the `setsid' function. */
 #define HAVE_SETSID 1
@@ -185,7 +185,7 @@
 #define HAVE_SYS_WAIT_H 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#define HAVE_UNISTD_H 1
+//#define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the `unsetenv' function. */
 #define HAVE_UNSETENV 1
@@ -283,6 +283,8 @@
 # define __EXTENSIONS__ 1
 #endif
 
+
+#include "typedefs.h"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

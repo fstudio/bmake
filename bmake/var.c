@@ -139,6 +139,10 @@ __RCSID("$NetBSD: var.c,v 1.192 2015/05/05 21:51:09 sjg Exp $");
 #include    "dir.h"
 #include    "job.h"
 
+#ifdef _MSC_VER
+#define snprintf _snprintf
+#endif
+
 extern int makelevel;
 /*
  * This lets us tell if we have replaced the original environ
@@ -774,7 +778,9 @@ Var_Export(char *str, int isExport)
 /*
  * This is called when .unexport[-env] is seen.
  */
+#ifndef _MSC_VER
 extern char **environ;
+#endif
 
 void
 Var_UnExport(char *str)

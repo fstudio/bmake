@@ -16,6 +16,12 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{9c875008-394d-4c4f-be67-25abbff817f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\Abstract">
+      <UniqueIdentifier>{53bc7738-c23f-4ea2-b2b7-cb95f9afa36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Abstract\regex">
+      <UniqueIdentifier>{7bb2211e-62a4-42de-af15-60392c1c8c92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\bmake\lst.lib\lstAppend.c">
@@ -179,6 +185,30 @@
     </ClCompile>
     <ClCompile Include="..\bmake\var.c">
       <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\dirent.c">
+      <Filter>Sources\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\regex\regcomp.c">
+      <Filter>Sources\Abstract\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\regex\regerror.c">
+      <Filter>Sources\Abstract\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\regex\regexec.c">
+      <Filter>Sources\Abstract\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\regex\regfree.c">
+      <Filter>Sources\Abstract\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\process.c">
+      <Filter>Sources\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\utsname.cpp">
+      <Filter>Sources\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abstract\environment.c">
+      <Filter>Sources\Abstract</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

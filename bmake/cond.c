@@ -493,7 +493,7 @@ CondCvtArg(char *str, double *value)
     l_val = strtoul(str, &eptr, str[1] == 'x' ? 16 : 10);
     ech = *eptr;
     if (ech == 0 && errno != ERANGE) {
-	d_val = str[0] == '-' ? -(double)-l_val : (double)l_val;
+	d_val = str[0] == '-' ? (-(double)-l_val) : (double)l_val;
     } else {
 	if (ech != 0 && ech != '.' && ech != 'e' && ech != 'E')
 	    return FALSE;

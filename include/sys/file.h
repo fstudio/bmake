@@ -6,8 +6,8 @@
 /*
  * This file is part of the Mingw32 package.
  *
- * unistd.h maps (roughly) to io.h
+ * This file.h maps to the root fcntl.h
+ * TODO?
  */
-#include <io.h>
-
+#include <fcntl.h>
 
