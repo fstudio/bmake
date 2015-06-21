@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{a830929b-4645-4671-ae48-81594e8c1307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\lst">
+      <UniqueIdentifier>{7e164907-faf1-464d-a22c-960d99ae1894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{a5b8e838-432d-46be-a04b-1874073bb049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\lst">
+      <UniqueIdentifier>{ca748c89-0730-4ed1-93aa-62fde2832974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{9c875008-394d-4c4f-be67-25abbff817f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bmake\lst.lib\lstAppend.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstAtEnd.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstAtFront.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstClose.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstConcat.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDatum.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDeQueue.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDestroy.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDupl.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstEnQueue.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFind.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFindFrom.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFirst.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstForEach.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstForEachFrom.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstInit.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstInsert.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstIsAtEnd.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstIsEmpty.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstLast.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstMember.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstNext.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstOpen.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstPrev.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstRemove.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstReplace.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstSucc.c">
+      <Filter>Sources\lst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\arch.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\buf.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\compat.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\cond.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\dir.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\dirname.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\for.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\getopt.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\hash.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\job.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\main.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\make.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\make_malloc.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\meta.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\parse.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\realpath.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\setenv.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\sigcompat.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\str.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\stresep.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\strlcpy.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\strlist.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\suff.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\targ.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\trace.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\util.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\var.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\bmake\lst.lib\lstInt.h">
+      <Filter>Include\lst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\buf.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\dir.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\hash.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\job.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\lst.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\make.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\make_malloc.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\make-conf.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\meta.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\nonints.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\pathnames.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\ranlib.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\sprite.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\strlist.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\trace.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\wait.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resources\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Resources\bmake.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

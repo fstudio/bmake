@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bmake\arch.c" />
+    <ClCompile Include="..\bmake\buf.c" />
+    <ClCompile Include="..\bmake\compat.c" />
+    <ClCompile Include="..\bmake\cond.c" />
+    <ClCompile Include="..\bmake\dir.c" />
+    <ClCompile Include="..\bmake\dirname.c" />
+    <ClCompile Include="..\bmake\for.c" />
+    <ClCompile Include="..\bmake\getopt.c" />
+    <ClCompile Include="..\bmake\hash.c" />
+    <ClCompile Include="..\bmake\job.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstAppend.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstAtEnd.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstAtFront.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstClose.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstConcat.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstDatum.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstDeQueue.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstDestroy.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstDupl.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstEnQueue.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstFind.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstFindFrom.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstFirst.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstForEach.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstForEachFrom.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstInit.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstInsert.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstIsAtEnd.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstIsEmpty.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstLast.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstMember.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstNext.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstOpen.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstPrev.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstRemove.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstReplace.c" />
+    <ClCompile Include="..\bmake\lst.lib\lstSucc.c" />
+    <ClCompile Include="..\bmake\main.c" />
+    <ClCompile Include="..\bmake\make.c" />
+    <ClCompile Include="..\bmake\make_malloc.c" />
+    <ClCompile Include="..\bmake\meta.c" />
+    <ClCompile Include="..\bmake\parse.c" />
+    <ClCompile Include="..\bmake\realpath.c" />
+    <ClCompile Include="..\bmake\setenv.c" />
+    <ClCompile Include="..\bmake\sigcompat.c" />
+    <ClCompile Include="..\bmake\str.c" />
+    <ClCompile Include="..\bmake\stresep.c" />
+    <ClCompile Include="..\bmake\strlcpy.c" />
+    <ClCompile Include="..\bmake\strlist.c" />
+    <ClCompile Include="..\bmake\suff.c" />
+    <ClCompile Include="..\bmake\targ.c" />
+    <ClCompile Include="..\bmake\trace.c" />
+    <ClCompile Include="..\bmake\util.c" />
+    <ClCompile Include="..\bmake\var.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\bmake\buf.h" />
+    <ClInclude Include="..\bmake\dir.h" />
+    <ClInclude Include="..\bmake\hash.h" />
+    <ClInclude Include="..\bmake\job.h" />
+    <ClInclude Include="..\bmake\lst.h" />
+    <ClInclude Include="..\bmake\lst.lib\lstInt.h" />
+    <ClInclude Include="..\bmake\make-conf.h" />
+    <ClInclude Include="..\bmake\make.h" />
+    <ClInclude Include="..\bmake\make_malloc.h" />
+    <ClInclude Include="..\bmake\meta.h" />
+    <ClInclude Include="..\bmake\nonints.h" />
+    <ClInclude Include="..\bmake\pathnames.h" />
+    <ClInclude Include="..\bmake\ranlib.h" />
+    <ClInclude Include="..\bmake\sprite.h" />
+    <ClInclude Include="..\bmake\strlist.h" />
+    <ClInclude Include="..\bmake\trace.h" />
+    <ClInclude Include="..\bmake\wait.h" />
+    <ClInclude Include="..\Resources\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Resources\bmake.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0EFCFEC8-A086-41C0-BAAB-0361597A533E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bmake</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\bmake.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\bmake.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
