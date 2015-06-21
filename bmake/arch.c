@@ -957,8 +957,9 @@ ArchFindMember(char *archive, char *member, struct ar_hdr *arhPtr,
 		 * the file at the actual member, rather than its header, but
 		 * not here...
 		 */
-		fseek(arch, -sizeof(struct ar_hdr), SEEK_CUR);
-		return (arch);
+			int len= sizeof(struct ar_hdr);
+			fseek(arch, -len, SEEK_CUR);
+			return (arch);
 	    }
 	} else
 #ifdef AR_EFMT1

@@ -101,6 +101,11 @@
 #ifdef _WIN32
 int setenv(const char *name, const char * value, int overwrite);
 int unsetenv(const char *name);
+
+#if defined(_MSC_VER)||!defined snprintf
+#define snprintf _snprintf
+#endif
+
 #endif
 
 #if defined(__GNUC__)

@@ -16,11 +16,13 @@ int setenv(const char *name, const char * value, int overwrite)
 	if (!(name&&value))
 		return -1;
 	if (overwrite == 0){
-		if (GetEnvironmentVariableA(name, NULL, 0) == 0){
-			if (ERROR_ENVVAR_NOT_FOUND == GetLastError()){
-				return 0;
+		if (GetEnvironmentVariableA(name, NULL, 0) > 0){
+			return 0;
+		}
+		else{
+			if (ERROR_ENVVAR_NOT_FOUND != GetLastError()){
+				return -1;
 			}
-			return -1;
 		}
 	}
 	if(SetEnvironmentVariableA(name, value))
