@@ -8,8 +8,9 @@
 #endif
 #include <Windows.h>
 #include <process.h>
+#include <signal2.h>
 
-int kill(int id)
+int kill(pid_t pid, int sig)
 {
 	return 0;
 }

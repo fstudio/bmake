@@ -375,6 +375,10 @@ getcwd(path, sz)
 }
 #endif
 
+#ifdef _WIN32
+#include <signal2.h>
+#endif
+
 /* force posix signals */
 void (*
 bmake_signal(int s, void (*a)(int)))(int)

@@ -36,7 +36,7 @@
 #include <sys/cdefs.h>
 //#include <sys/_timeval.h>
 //#include <sys/_types.h>
-
+#include <stdint.h>
 /*
  * Process priority specifications to get/setpriority.
  */
