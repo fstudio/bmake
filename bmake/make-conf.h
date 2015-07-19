@@ -111,7 +111,11 @@
  *	that don't have this problem, you should defined this. Under
  *	NFS you probably should not, unless you aren't exporting jobs.
  */
+#if defined(_MSC_VER)
+#define	LIBSUFF	".lib"
+#else
 #define	LIBSUFF	".a"
+#endif
 #define	RECHECK
 
 /*
