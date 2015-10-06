@@ -2998,7 +2998,7 @@ ApplyModifiers(char *nstr, const char *tstr,
 				    char *ep;
 
 				    parsestate.varSpace =
-					strtoul(&tstr[3], &ep, 0);
+						(Byte)strtoul(&tstr[3], &ep, 0);
 				    if (*ep != ':' && *ep != endc)
 					goto bad_modifier;
 				    cp = ep;
