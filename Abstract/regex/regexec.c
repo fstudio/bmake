@@ -224,7 +224,7 @@ regexec(
 	if (g->iflags&BAD)		/* backstop for no-debug case */
 		return(REG_BADPAT);
 	eflags = GOODFLAGS(eflags);
-
+#define __UNCONST(x) (void *)x
 	s = __UNCONST(string);
 
 	if (g->nstates <= (sopno)(CHAR_BIT*sizeof(states1)) && !(eflags&REG_LARGE))

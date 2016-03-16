@@ -29,6 +29,27 @@ typedef struct MachineNameTag{
 	const char *name;
 }MachineName;
 
+/*
+#define PROCESSOR_ARCHITECTURE_INTEL            0
+#define PROCESSOR_ARCHITECTURE_MIPS             1
+#define PROCESSOR_ARCHITECTURE_ALPHA            2
+#define PROCESSOR_ARCHITECTURE_PPC              3
+#define PROCESSOR_ARCHITECTURE_SHX              4
+#define PROCESSOR_ARCHITECTURE_ARM              5
+#define PROCESSOR_ARCHITECTURE_IA64             6
+#define PROCESSOR_ARCHITECTURE_ALPHA64          7
+#define PROCESSOR_ARCHITECTURE_MSIL             8
+#define PROCESSOR_ARCHITECTURE_AMD64            9
+#define PROCESSOR_ARCHITECTURE_IA32_ON_WIN64    10
+#define PROCESSOR_ARCHITECTURE_NEUTRAL          11
+#define PROCESSOR_ARCHITECTURE_ARM64            12
+
+#define PROCESSOR_ARCHITECTURE_UNKNOWN 0xFFFF
+*/
+#ifndef PROCESSOR_ARCHITECTURE_ARM64
+#define PROCESSOR_ARCHITECTURE_ARM64 12
+#endif
+
 static MachineName machineList[] = {
 	{ PROCESSOR_ARCHITECTURE_INTEL, "x86" },
 	{ PROCESSOR_ARCHITECTURE_MIPS , "mips" },
@@ -41,7 +62,9 @@ static MachineName machineList[] = {
 	{ PROCESSOR_ARCHITECTURE_MSIL ,"MSIL"},
 	{ PROCESSOR_ARCHITECTURE_AMD64,"x86_64" },
 	{ PROCESSOR_ARCHITECTURE_IA32_ON_WIN64   ,"ia32onwin64" },
-	{ PROCESSOR_ARCHITECTURE_NEUTRAL  ,"neutral"   }
+	{ PROCESSOR_ARCHITECTURE_NEUTRAL  ,"neutral"   },
+	{ PROCESSOR_ARCHITECTURE_ARM64,"arm64"},
+	{ PROCESSOR_ARCHITECTURE_UNKNOWN,"unknown"}
 };
 
 extern "C" int uname(struct utsname *name) {

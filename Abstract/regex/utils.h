@@ -85,7 +85,13 @@ typedef unsigned char uch;
 #endif
 #endif
 #include <assert.h>
+#ifdef DEBUG
+#define _DIAGASSERT(x) assert(x)
+#else
+#define _DIAGASSERT
+#endif
 
+#define __type_fit(x,y)  (sizeof(x)==sizeof(y))
 /* for old systems with bcopy() but no memmove() */
 #ifdef USEBCOPY
 #define	memmove(d, s, c)	bcopy(s, d, c)
