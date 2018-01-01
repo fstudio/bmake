@@ -1,279 +1,248 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Sources">
-      <UniqueIdentifier>{a830929b-4645-4671-ae48-81594e8c1307}</UniqueIdentifier>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Sources\lst">
-      <UniqueIdentifier>{7e164907-faf1-464d-a22c-960d99ae1894}</UniqueIdentifier>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Include">
-      <UniqueIdentifier>{a5b8e838-432d-46be-a04b-1874073bb049}</UniqueIdentifier>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Include\lst">
-      <UniqueIdentifier>{ca748c89-0730-4ed1-93aa-62fde2832974}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resources">
-      <UniqueIdentifier>{9c875008-394d-4c4f-be67-25abbff817f2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Abstract">
-      <UniqueIdentifier>{53bc7738-c23f-4ea2-b2b7-cb95f9afa36f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Abstract\regex">
-      <UniqueIdentifier>{7bb2211e-62a4-42de-af15-60392c1c8c92}</UniqueIdentifier>
+    <Filter Include="源文件\list.lib">
+      <UniqueIdentifier>{4d3ccbc0-bb40-438c-b7f8-43d916c90d62}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\bmake\lst.lib\lstAppend.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstAtEnd.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstAtFront.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstClose.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstConcat.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstDatum.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstDeQueue.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstDestroy.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstDupl.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstEnQueue.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstFind.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstFindFrom.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstFirst.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstForEach.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstForEachFrom.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstInit.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstInsert.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstIsAtEnd.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstIsEmpty.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstLast.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstMember.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstNext.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstOpen.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstPrev.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstRemove.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstReplace.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\lst.lib\lstSucc.c">
-      <Filter>Sources\lst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\arch.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\buf.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\compat.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\cond.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\dir.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\dirname.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\for.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\getopt.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\hash.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\job.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\main.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\make.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\make_malloc.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\meta.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\parse.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\realpath.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\setenv.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\sigcompat.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\str.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\stresep.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\strlcpy.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\strlist.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\suff.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\targ.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\trace.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\util.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\bmake\var.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\dirent.c">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\regex\regcomp.c">
-      <Filter>Sources\Abstract\regex</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\regex\regerror.c">
-      <Filter>Sources\Abstract\regex</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\regex\regexec.c">
-      <Filter>Sources\Abstract\regex</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\regex\regfree.c">
-      <Filter>Sources\Abstract\regex</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\process.c">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\utsname.cpp">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\environment.c">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\signal.c">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Abstract\tmp.cpp">
-      <Filter>Sources\Abstract</Filter>
-    </ClCompile>
+    <ResourceCompile Include="..\resources\bmake.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\bmake\lst.lib\lstInt.h">
-      <Filter>Include\lst</Filter>
-    </ClInclude>
     <ClInclude Include="..\bmake\buf.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\dir.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\hash.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\job.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\lst.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\make.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\make_malloc.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\make-conf.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\meta.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmake\metachar.h">
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\nonints.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\pathnames.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\ranlib.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\sprite.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\strlist.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\trace.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\bmake\wait.h">
-      <Filter>Include</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\Resources\resource.h" />
+    <ClInclude Include="..\bmake\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\Resources\bmake.rc">
-      <Filter>Resources</Filter>
-    </ResourceCompile>
+    <ClCompile Include="..\bmake\arch.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\buf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\compat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\cond.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\dir.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\dirname.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\for.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\getopt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\hash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\job.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\make.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\make_malloc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\meta.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\metachar.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\parse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\realpath.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\setenv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\sigcompat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\str.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\stresep.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\strlcpy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\strlist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\suff.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\targ.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\trace.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\var.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstAppend.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstSucc.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstReplace.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstRemove.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstPrev.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstOpen.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstNext.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstMember.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstLast.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstIsEmpty.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstIsAtEnd.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstInsert.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstInit.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstForEachFrom.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstForEach.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFirst.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFind.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstFindFrom.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstEnQueue.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDupl.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDeQueue.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDestroy.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstDatum.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstConcat.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstClose.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstAtFront.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmake\lst.lib\lstAtEnd.c">
+      <Filter>源文件\list.lib</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

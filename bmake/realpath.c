@@ -48,13 +48,6 @@
 #ifdef HAVE_STRING_H
 # include <string.h>
 #endif
-
-#ifdef _WIN32
-#include <stddef.h>
-#include <direct.h>
-#define getcwd _getcwd 
-#endif
-
 #ifdef HAVE_UNISTD_H
 # include <unistd.h>
 #endif

@@ -63,7 +63,7 @@ ipch/
 *.psess
 *.vsp
 *.vspx
-
+*.VC.db
 # Guidance Automation Toolkit
 *.gpState
 

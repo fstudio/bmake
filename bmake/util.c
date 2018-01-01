@@ -375,16 +375,6 @@ getcwd(path, sz)
 }
 #endif
 
-#ifdef _WIN32
-#include <signal2.h>
-void (*
-bmake_signal(int s, void(*a)(int)))(int)
-{
-	signal(s, a);
-	return a;
-}
-#else
-
 /* force posix signals */
 void (*
 bmake_signal(int s, void (*a)(int)))(int)
@@ -400,7 +390,6 @@ bmake_signal(int s, void (*a)(int)))(int)
     else
 	return osa.sa_handler;
 }
-#endif
 
 #if !defined(HAVE_VSNPRINTF) || !defined(HAVE_VASPRINTF)
 #include <stdarg.h>
